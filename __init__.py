@@ -19,14 +19,21 @@ class FishQuotes(MycroftSkill):
             ("Do not tell fish stories where the people know you. Particularly, don't tell them where they know the fish", "Mark Twain"),
             ("There's no taking trout with dry breeches", "Cervantes"),
             ("It has always been my private conviction that any man who pits his intelligence against a fish and loses has it coming", "John Steinbeck"),
-            ("Somebody just back of you while you are fishing is as bad as someone looking over your shoulder while you write a letter to your girl", "Ernest Hemingway")
+            ("Somebody just back of you while you are fishing is as bad as someone looking over your shoulder while you write a letter to your girl", "Ernest Hemingway"),
+            ("Comedians get jokes offered to them, rock stars get women and underwear thrown on stage, and I get guys that want to take me fishing.", "Les Claypool"),
+            ("Guests, like fish, begin to smell after three days.", "Benjamin Franklin"),
+            ("Nothing makes a fish bigger than almost being caught.", "Unknown"),
+            ("There is no greater fan of fly fishing than the worm.", "Patrick F. McManus"),
+            ("Calling fishing a hobby is like calling brain surgery a job.", "Paul Schullery"),
+            ("The best time to go fishing is when you can get away.", "Robert Traver"),
+            ("May the holes in your net be no larger than the fish in it.", "Irish Proverb"),
+            ("The fishing was good; it was the catching that was bad.", "A.K. Best")
         ]
 
         fishing_quote = random.choice(fishing_quotes)
 
-        self.speak_dialog(fishing_quote[0])
-        self.speak_dialog(fishing_quote[1])
+        self.speak_dialog(fishing_quote[0]) # quote
+        self.speak_dialog(fishing_quote[1]) # author / source
 
 def create_skill():
     return FishQuotes()
-
